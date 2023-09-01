@@ -12,13 +12,12 @@ const btn = document.querySelector('.btn')
 //funkcja sprawdzająca czy ciąg znaków wpisany przez usera zawiera się w liście napojów
 
 function search(e){
-    e = inputElement.value
+    e = inputElement.value.toLowerCase()
 for (let i = 0; i < li.length; i++) {
-    if (li[i].textContent.includes(e)) {
+    if (li[i].textContent.toLowerCase().includes(e)) {
         li[i].classList.remove('hidden')
-    }else if(inputElement.value == null){
-        li[i].classList.remove('hidden')
-    }else{
+    }
+    else if(inputElement.value !== null){
         li[i].classList.add('hidden')
     }
 }
