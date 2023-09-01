@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /*font-family: 'Dancing Script', cursive;*/
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(233, 233, 233);
+}
+
+.wrapper{
+    width: 800px;
+    background-color: white;
+    box-shadow: 0 0 10px black;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url('https://cdn.galleries.smcloud.net/t/galleries/gf-5cqM-BS6Q-v1Hs_zimne-napoje-664x442.jpg');
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Dancing Script', cursive;
+    z-index: 0;
+    padding: 20px 40px;
+    position: relative;
+}
+
+.shadow{
+    position: absolute;
+    background-color: rgb(0, 0, 0, .35);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+h1{
+    color: white;
+    margin-bottom: 30px;
+    font-size: 60px;
+    margin-top: 25%;
+}
+
+.search{
+padding: 10px 20px;
+border-radius: 6px;
+background-color: rgba(255, 255, 255, .80);
+font-size: 15px;
+width: 100%;
+}
+
+.drink-list{
+   
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h2{
+    padding: 20px 40px;
+
+}
+
+ul{
+    padding: 20px 20px;
+}
+
+li{
+    padding: 10px 80px;
+    font-size: 20px;
+    list-style: none;
+    border-bottom: 1px solid rgb(226, 226, 226);
+}
+
+.hidden{
+    display: none;
+}
